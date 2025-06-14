@@ -3,7 +3,7 @@
 public void agregarPaciente(Paciente nuevoPaciente) {
 
        if (cabeza == null || nuevoPaciente.urgencia > cabeza.urgencia ||
-            (nuevoPaciente.urgencia == cabeza.urgencia &&
+            (nuevoPaciente.urgencia == cabeza.urgencia 
              nuevoPaciente.horaLlegada.compareTo(cabeza.horaLlegada) < 0)) {
             nuevoPaciente.siguiente = cabeza;
             cabeza = nuevoPaciente;
