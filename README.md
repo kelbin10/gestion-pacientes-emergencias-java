@@ -19,7 +19,7 @@ public void agregarPaciente(Paciente nuevoPaciente) {
             System.out.println("ℹ No hay pacientes en espera.");
             return;
         }
-        System.out.println("\n---  लिस्टा डे Pacientes en Espera (" + contadorPacientes + ") ---");
+        System.out.println("\n---   Pacientes en Espera (" + contadorPacientes + ") ---");
         Paciente actual = cabeza;
         int i = 1;
         while (actual != null) {
@@ -37,7 +37,7 @@ if (cabeza == null) {
         Paciente atendido = cabeza;
         cabeza = cabeza.siguiente;
         contadorPacientes--;
-        System.out.println("🩺 Atendiendo al paciente: " + atendido.nombre + " (ID: " + atendido.id + ", Urgencia: " + atendido.urgencia + ")");
+        System.out.println(" Atendiendo al paciente: " + atendido.nombre + " (ID: " + atendido.id + ", Urgencia: " + atendido.urgencia + ")");
         System.out.println(" Paciente eliminado de la lista de espera.");
 
 **Implementar Buscar paciente**
